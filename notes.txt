@@ -1,0 +1,12 @@
+initial = '''тебе но голос музы тёмной
+коснется ль уха твоего
+поймешь ли ты душою скромной
+стремленье сердца моего
+
+'''
+
+for i in range(10):
+    fn = '/result/%05d'%i + '.txt'
+    print(fn)
+    with open(fn, 'w') as f:
+        f.write(get_poetry(initial))

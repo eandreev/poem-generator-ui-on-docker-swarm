@@ -1,0 +1,6 @@
+_old/**
+art/**
+_model_data/**
+**/__pycache__
+.DS_Store
+containers/worker/aws-credentials

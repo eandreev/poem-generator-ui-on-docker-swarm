@@ -1,0 +1,24 @@
+filetype plugin on
+set backspace=2
+set whichwrap+=<,>,h,l
+set nocompatible
+set tabstop=4
+set shiftwidth=4
+set showmatch
+syntax on
+set virtualedit=all
+set background=dark
+set incsearch
+
+set autoindent
+
+
+noremap i :highlight Normal guibg=white<cr>i
+noremap o :highlight Normal guibg=white<cr>o
+noremap s :highlight Normal guibg=white<cr>s
+noremap a :highlight Normal guibg=white<cr>a
+noremap I :highlight Normal guibg=white<cr>I
+noremap O :highlight Normal guibg=white<cr>O
+noremap S :highlight Normal guibg=white<cr>S
+noremap A :highlight Normal guibg=white<cr>A
+

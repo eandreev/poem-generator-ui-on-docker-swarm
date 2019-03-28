@@ -1,0 +1,136 @@
+Egor A Andreev
+
+egor@andreev.com
+Russia: +7 (909) 684-4020
+US:     +1 (408) 332-9873
+
+
+SKILLS AND TOOLS
+
+PHP, Python, Tornado, MySQL, HTML, CSS, Javascript, jQuery,
+Linux administration, Apache, bash, CoreOS, Fleet,
+Docker, Swarm, Ansible,
+Machine Learning, Deep Learning, Keras, Tensorflow,
+Amazon AWS, EC2, CloudFormation,
+Jira
+
+
+WORK EXPERIENCE
+
+Lazada (2015/04 - 2016/02)
+Moscow, Russia
+Technical Project Manager
+* Project management for the mobile dev team (20+ software engineers, 2 locations: Moscow and Saigon, iOS and Android)
+* Transitioned the mobile dev team from a chaotic waterfall-like process to Agile
+* Coordinated the team’s internal processes
+* Coordinated the team’s efforts with other departments (product, marketing, etc.)
+* Facilitation of daily meetings, project progress reporting, etc.
+
+Vsevcredit (a consumer loan broker) (2014/05 - 2015/04)
+Moscow, Russia
+Techlead/CTO
+* Business process development
+* Integration with partner banks via web-services
+* Revived back to life a LAMP-based system that was abandoned for 6 months (a custom CRM + API + widget for online retailers)
+* Reverse-engineered and refactored parts of the system (fronted and backend)
+* Specified and developed a new API
+* Coordinated external developers (outsourcers, etc.)
+* Provided SuiteCRM (SugarCRM) for our sales team
+* Technical support for online retailers
+* Performed technical audit and hiring for other projects of our investor
+
+Interactive Bank (2013/04 - 2013/11)
+Moscow, Russia
+Head of the Remote/Internet Banking Dept
+* Organized the QA process for testing the online banking solution
+* Interaction with leading Russian online banking solution and IT services vendors
+* Bank’s website development (PHP, MySQL)
+* Online statement development (PHP, MySQL, MS SQL)
+* Sever administration (Linux)
+
+Tinkoff Credit Systems Bank (TCS Bank) (2011/06 - 2013/03)
+Moscow, Russia
+Software Architect (Online Consumer Loans Project)
+* Lead a team that developed the bank’s online consumer loans service (http://kupivkredit.ru/)
+* Performed system analytics and business process design
+* Specified the system’s external and internal API and architecture (MySQL, PHP)
+* Specified integration with the bank’s SOA infrastructure (Siebel CRM, WebSphere ESB, Lombardi/IBM BPM)
+* Organized partner support (we consulted online retailers on how to integrate with us and provided basic technical support)
+* Helped deal with fraud
+* Deployment automation, performed sysadmin tasks (RHEL, Apache, MySQL)
+* Technical roadmap design and planning
+
+A Social Media Startup (2009/07 - 2011/06)
+Moscow, Russia
+Techlead/CTO
+* Lead a team of 4-5 developers
+* Hired new team members
+* Developed the backend of the service (PHP, MySQL, PHPUnit)
+* Implemented sending of iOS push notifications (iOS)
+* Automated deployment (bash)
+* Performed sysadmin tasks (RHEL, CentOS, AWS)
+* Authored a part of the site’s UI (JavaScript, jQuery, Smarty)
+* Developed a RESTful API for our mobile app (iOS and Android) 
+
+Yahoo, Inc (2006/11 - 2009/07)
+Sunnyvale, CA, USA
+Technical Yahoo (Software Developer)
+Worked on backend web services for several websites including Yahoo Food, Health and Pets (PHP,
+Apache, MySQL, web service integration, etc.) In addition to coding, provided instructions and,
+when needed, assistance to the ops team on how to deploy, maintain and upgrade various parts of
+our SOA-based system.
+
+Stratify (2006/01 - 2006/11)
+Mountain View, CA, USA
+Software Developer
+Participated in development and support of a service-based document management system. It involved:
+* Windows GUI development and support (Visual C++, ATL, COM)
+* Backend development (Visual C++, ATL, COM)
+* Load test development using JMeter, BeanShell and Ant
+* Tested and integrated file conversion libraries (Stellent)
+
+LSI Logic Corporation, Advanced Development Lab (2004/10 - 2006/01)
+Milpitas, CA, USA
+Software Developer
+* Parser development and optimization (in C++)
+* Eclipse plugin development (in Java)
+* Prepared two patent applications (US Patents 6886088 and 6615397)
+* Circuit design (memory controllers): a 2-port memory module has been composed out of 1-port ones
+* Development of user-interface utilities (for X-Windows) 
+
+
+EDUCATION
+
+University of Southern California
+M.S. in Computer Science, May 2004
+
+University of Massachusetts Amherst
+B.S. in Computer Science, May 2002
+
+
+PROFESSIONAL TRAINING
+
+A 3-month Big Data class by newprolab.com (Moscow, Russia) in 2016.
+Class contents:
+* Map-Reduce, Hadoop, HDFS, HBase, Hive, Pig, etc.
+* Spark, MLLib, Spark Streaming
+* Machine learning, Natural language processing
+Certificate of completion: http://lk.newprolab.com/certificate/egor.andreev/165f154a6999d5bbd30d0b493558ccdf841b892b74dfbcd98a33396793a44cfcc35bd2400608e82680c5951505b417f54bc2d8ccb0d9f679a898bbf54c7720c1
+
+
+PATENTS
+
+(1) Optimal clock timing schedule for an integrated circuit, US Patent 6615397
+(2) Memory that allows simultaneous read requests, US Patent 6886088 
+
+
+PUBLICATIONS
+
+(1) A Modeling and Exploration Framework for Mapping of Linear Array of Tasks onto Adaptive
+Computing Systems, Egor Andreev, Sumit Mohanty, Viktor K. Prasanna, International Conference
+on The Military and Aerospace Programmable Logic Devices (MAPLD), September 2003
+
+(2)  Energy and Latency Efficient Design of a Personnel Detection and Tracking  System,
+Edward Wanek, Egor Andreev, Julius Bogdanowicz, Seonil Choi, Raymond Maylone, Sumit  Mohanty,
+Jingzhao Ou, Viktor Prasanna, Ronald Scrofano, High Performance Embedded Computing Workshop
+(HPEC), September 2003

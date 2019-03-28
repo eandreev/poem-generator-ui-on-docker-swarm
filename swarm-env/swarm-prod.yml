@@ -1,0 +1,38 @@
+version: "3.2"
+# We need it in order to enable extarnal DNS resolution.
+# For more details, see: https://github.com/docker/docker/issues/27399#issuecomment-256928125
+networks:
+  default:
+    ipam:
+      config:
+       - subnet: 192.168.1.0/24
+services:
+  www:
+    image: "eandreev/poem-generator-www"
+    deploy:
+      placement:
+        constraints:
+         - engine.labels.node_role == webserver
+    ports:
+      - target: 8888
+        published: 80
+        protocol: tcp
+        mode: host
+    volumes:
+      - /var/log/poem-generator-www-logs/:/var/log/supervisor/
+  worker:
+    image: "eandreev/poem-generator-worker"
+    environment:
+      NUMPROCS: 1
+    deploy:
+      placement:
+        constraints:
+         - engine.labels.node_role == worker
+  redis:
+    image: redis
+    deploy:
+      placement:
+        constraints:
+         - engine.labels.node_role == webserver
+    ports:
+     - "6379"

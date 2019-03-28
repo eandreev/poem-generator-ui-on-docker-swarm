@@ -1,0 +1,30 @@
+version: '2'
+services:
+  www:
+    build:
+      context: .
+      dockerfile: containers/www/Dockerfile
+    ports:
+     - "8888:8888"
+    volumes:
+     - ./src/www:/www
+     - ./src/common:/common
+    links:
+     - redis:redis
+  worker:
+    build:
+      context: .
+      dockerfile: containers/worker/Dockerfile
+    volumes:
+     - ./src/utils:/utils
+     - ./src/worker:/worker
+     - ./src/common:/common
+     - ./_model_data:/var/model-data
+    links:
+     - redis:redis
+  redis:
+    image: redis
+    ports:
+     - "6379"
+  
+     

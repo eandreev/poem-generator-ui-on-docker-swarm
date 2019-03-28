@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Робот Пушкин</title>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-96992861-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="icon" type="image/png" href="/favicon.ico" />
+	<meta name="yandex-verification" content="02c45a62065fb5e5" />
+    
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/style.css" rel="stylesheet" media="screen">
+	<script src="/static/js/modernizr.custom.js"></script>
+    <link rel="image_src" href="/static/img/bg-push.png" />
+    <meta property="og:image" content="http://{{ xhtml_escape(remote_host) }}/static/img/bg-push.png" />
+    <meta property="og:title" content="Робот Пушкин" />
+    <meta property="og:description" content="Нейросетевой генератор стихов Пушкина. &mdash; Кто будет стихи писать? &mdash; Пушкин!" />
+    </head>
+	<body>  
+	<div id="intro">
+		<div class="intro-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="brand">
+							<h2>Робот Пушкин</h2>
+							<div class="line-spacer"></div>
+							<p><span>Кто будет стихи писать? &mdash; Пушкин!</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+	  
+
+	<section id="poem-gen" class="home-section bg-white">
+	  	<div class="container">
+			<div class="row poet-intro">
+				<div class="col-md-offset-2 col-md-8">
+					<p>Позвольте представить вам генератор стихов Пушкина на основе нейронной сети,
+					которая была обучена на корпусе русской поэзии и заточена под стихи
+					Александра Сергеевича. Чтобы она лучше понимала слова русского языка,
+					был проанализирован корпус русской литературы.</p>
+
+					<p>Не судите его строго &mdash; местами он фальшивит и не всегда выдаёт удачные
+					вирши. Можно сказать, что он не пишет уже готовые для печати стихи,
+					а скорее имитирует мыслительный процесс поэта при сочинении оных. Представьте
+					себе: идёт Пушкин по Петербургу и пытается подобрать рифму... Вот именно это
+					и имитируется нейронной сетью.</p>
+
+					<p>Итак, жмите расположенную ниже кнопку и наслаждайтейсь новыми, ещё не
+					видевшими свет стихами классика!</p>
+				</div>
+			</div>
+
+	  		<div class="row">
+	  			<div class="col-md-offset-2 col-md-8">
+                    <form action="" method="post" role="form" class="contactForm">
+						<div class="form-group">
+							<button id="get-poem" type="submit" class="btn btn-theme btn-lg btn-block" data-loading-text="Пушкин думает...&nbsp;&nbsp;<i class='fa fa-refresh fa-spin' style='font-size:24px'></i>">Пушкин, спой!</button>
+						</div>
+                        <div class="form-group">
+                            <textarea readonly id="poem-text" class="form-control" rows="25" data-rule="required" data-msg="Please write something for us" placeholder="Нажмите кнопку, чтобы получить стихи"></textarea>
+                        </div>
+                    </form>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </section>
+
+
+	<section id="lstm" class="home-section bg-light-blue">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>Как это работает</h2>
+					 <h3>Нейронная сеть</h3>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+				  <img id="lstm-img" src="/static/img/poem-lstm.svg">
+			  </div>
+		</div>
+	</section>
+
+	<section id="lstm" class="home-section bg-gray">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h3>Облачная инфраструктура</h3>
+					 <p style="text-align: justify;">
+						 Система развёрнута на платформе <a href="https://aws.amazon.com/">AWS</a> при помощи
+						 шаблона CloudFormation и <a href="https://docs.docker.com/engine/swarm/">Swarm</a>.
+						 Два кластера (вебсерверы и генераторы текста) связаны при помощи очереди
+						 на основе <a href="https://redis.io/">Redis</a>.
+					 </p>
+					</div>
+				  </div>
+			  </div>
+			  <div class="row">
+				  <img id="cluster-img" src="/static/img/cluster.svg">
+			  </div>
+		</div>
+	</section>
+
+	<section id="lstm" class="home-section bg-light-blue">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-md-offset-2 col-md-8">
+					<div class="section-heading">
+					 <h2>Автор</h2>
+					</div>
+				  </div>
+			  </div>
+
+				<div class="row">
+					<div class="col-md-6 author-pic">
+						<img src="/static/img/author.png" width="175" height="175">
+					</div>
+					<div class="col-md-4 author-contacts">
+						<div>
+							<h2>Егор Андреев</h2>
+							<ul class="social-network">
+								<li><a href="https://www.facebook.com/egor.a.andreev">
+								<span class="fa-stack fa-2x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span></a>
+								</li>
+								<li><a href="https://www.linkedin.com/in/egor-andreev-3031074/">
+								<span class="fa-stack fa-2x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span></a>
+								</li>
+								<li><a href="https://vk.com/egor.andreev">
+								<span class="fa-stack fa-2x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+								</span></a>
+								</li>
+							</ul>
+
+							<div class="resume-block">
+								<a class="resume resume-rus" href="/static/resume/resume-rus.pdf"><i class="fa fa-file-text-o fa-lg"></i>&nbsp;&nbsp;резюме на русском</a><br/>
+								<a class="resume resume-eng" href="/static/resume/resume-eng.txt"><i class="fa fa-file-text-o fa-lg"></i>&nbsp;&nbsp;resume in English</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<!-- Disqus begins -->
+	<div id="disqus_thread"></div>
+	<script>		
+		var disqus_config = function () {
+			this.page.url = 'http://pushkin.andreev.net/';  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = 'index'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+		
+		(function() { // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+		s.src = 'https://robot-pushkin.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<!-- Disqus ends -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; Егор Андреев<br>
+					<a href="mailto:egor@andreev.com">egor@andreev.com</a></p>
+				</div>
+			</div>		
+		</div>	
+	</footer>
+	
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/jquery.smooth-scroll.min.js"></script>
+	<script src="/static/js/jquery.dlmenu.js"></script>
+
+	<script>
+		$(function () {
+			$('#dl-menu').dlmenu();
+			$('ul.dl-menu li a').smoothScroll();
+
+			$('#get-poem').click(function(e) {
+				e.preventDefault();
+
+				var btn = this;
+				$(btn).button('loading');
+				ga('send', 'event', 'get-poem');
+				$.ajax({
+					type: 'POST', url: '/ajax/poem',
+					success: function(r) {
+						$('#poem-text').text(r.poem);
+						$(btn).button('reset')
+					} 
+				});
+			});
+
+			$('a.resume').click(function(e) {
+				e.preventDefault();
+				var pagePath = $(this).attr('href');
+				ga('send', 'pageview', pagePath);
+				setTimeout(function() {
+					window.location.href = pagePath;
+				}, 1000);
+			});
+		});
+	</script>
+    
+  </body>
+</html>
